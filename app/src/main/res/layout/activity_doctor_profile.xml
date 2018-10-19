@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.DoctorProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <include layout="@layout/app_bar_layout" android:id="@+id/profile_page_toolbar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp">
+
+
+            <TextView
+                android:id="@+id/TextViewLastName"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Full Name: " />
+
+            <EditText
+                android:id="@+id/EditViewDocFullName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="15dp"
+                android:paddingRight="15dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp">
+
+
+            <TextView
+                android:id="@+id/TextViewAge"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Age: " />
+
+            <EditText
+                android:id="@+id/EditViewDocAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp">
+
+
+            <TextView
+                android:id="@+id/DocGender"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Gender:  " />
+
+            <Spinner
+                android:id="@+id/SpinnerDocGender"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:entries="@array/Gender">
+
+            </Spinner>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp">
+
+
+            <TextView
+                android:id="@+id/TextView"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Profession: " />
+
+            <EditText
+                android:id="@+id/EditViewProfession"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp">
+
+
+            <TextView
+                android:id="@+id/TextView2"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Telephone: " />
+
+            <EditText
+                android:id="@+id/EditViewTelephone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp">
+
+
+            <TextView
+                android:id="@+id/TextView3"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Address: " />
+
+            <EditText
+                android:id="@+id/EditViewAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_edge">
+
+                <EditText
+                    android:id="@+id/EditViewBriefIntroduction"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:gravity="top"
+                    android:background="@null"
+                    android:hint="Brief Introduction: "
+                    android:maxLength="200"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/SaveDocBtn"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_corner_btn"
+            android:textColor="@color/whiteColor"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="save" />
+
+
+    </LinearLayout></ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

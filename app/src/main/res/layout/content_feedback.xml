@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.Feedback">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="425dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_edge">
+
+        <EditText
+            android:id="@+id/edt"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="Add Feedback for patient's heartbeat Here"
+            android:maxLength="200"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="170dp"
+        android:layout_height="40sp"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/whiteColor"
+        android:background="@drawable/round_corner_btn"
+        android:text="Confirm Complete" />
+
+</LinearLayout>

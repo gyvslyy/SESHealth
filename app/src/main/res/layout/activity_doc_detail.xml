@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.DocDetail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/back"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/doc_detail_toolbar"
+            layout="@layout/app_bar_patient_layout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="417dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp">
+
+            <ListView
+                android:id="@+id/DocDetailListView"
+                android:layout_width="match_parent"
+                android:layout_height="388dp"
+                android:background="@color/whiteColor">
+
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <Button
+                android:id="@+id/ConfirmBtn"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:background="@drawable/blue_round_corner_btn"
+                android:text="choose"
+                android:textColor="@color/whiteColor"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

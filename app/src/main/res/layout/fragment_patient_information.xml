@@ -1,0 +1,230 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="group2.seshealthpatient.Fragments.PatientInformationFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp">
+
+
+            <TextView
+
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Email:  " />
+
+            <TextView
+                android:id="@+id/TextViewEmail"
+                android:layout_width="270dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="12344" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/TextViewFirstName"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="First Name: " />
+
+            <EditText
+                android:id="@+id/EditViewFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/TextViewLastName"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Last Name: " />
+
+            <EditText
+                android:id="@+id/EditViewLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/TextViewAge"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Age: " />
+
+            <EditText
+                android:id="@+id/EditViewAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/TextViewGender"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Gender:  " />
+
+            <Spinner
+                android:id="@+id/SpinnerGender"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:entries="@array/Gender">
+
+            </Spinner>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/TextViewHeight"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Height(cm): " />
+
+            <EditText
+                android:id="@+id/EditViewHeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/TextViewWeight"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Weight(kg): " />
+
+            <EditText
+                android:id="@+id/EditViewWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/TextViewAdd"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Address: " />
+
+            <EditText
+                android:id="@+id/EditViewAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="192dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="164dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_edge">
+
+                <EditText
+                    android:id="@+id/EditViewMC"
+                    android:layout_width="match_parent"
+                    android:layout_height="144dp"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:hint="Medical Conditions"
+                    android:maxLength="200"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/SaveBtn"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/blue_round_corner_btn"
+            android:text="Update"
+            android:textSize="18sp"
+            android:textColor="@color/whiteColor" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+
+    </LinearLayout></ScrollView>
+
+</FrameLayout>
